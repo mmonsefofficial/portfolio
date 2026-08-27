@@ -1,0 +1,34 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap');
+@import "tailwindcss";
+
+:root {
+  /* Core Palette from your CV */
+  --background: #ffffff;
+  --surface: #f7f7f9;
+  --foreground: #0a0a0c;
+  --secondary-black: #27272a;
+  --muted: #68686f;
+  --border: #d9d9df;
+
+  /* Your Accents */
+  --accent: #1717b8;
+  --accent-hover: #10108f;
+  --purple: #6d35d9;
+
+  /* The Signature Gradient */
+  --signature-gradient: linear-gradient(120deg, var(--accent), var(--purple));
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: var(--background);
+  color: var(--foreground);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* The signature blue divider from your CV */
+.cv-divider {
+  border-top: 1px solid var(--accent);
+  opacity: 0.8;
+}

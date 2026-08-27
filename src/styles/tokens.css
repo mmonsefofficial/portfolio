@@ -1,0 +1,18 @@
+:root {
+  --background: #ffffff;
+  --surface: #f7f7f9;
+  --surface-soft: #f0f0f3;
+
+  --foreground: #08080a;
+  --muted: #68686f;
+  --border: #d9d9df;
+
+  --accent: #1717b8;
+  --accent-hover: #10108f;
+
+  --purple: #6d35d9;
+
+  --radius: 8px;
+
+  --container: 1200px;
+}

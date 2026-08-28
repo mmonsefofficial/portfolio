@@ -33,10 +33,10 @@ export default function Work() {
   const current = projects[currentIndex];
 
   return (
-    <section id="work" className="py-24 flex flex-col items-center justify-center px-4">
+    <section id="work" className="py-24 px-6 md:px-12 max-w-3xl mx-auto flex flex-col items-start">
       
-      {/* Section Title Header */}
-      <div className="w-full max-w-3xl mb-10 text-left">
+      {/* Left-aligned Section Title Header */}
+      <div className="w-full mb-10 text-left">
         <h2 className="text-3xl md:text-4xl font-bold tracking-tight text-[var(--foreground)]">
           Selected Work
         </h2>
@@ -45,8 +45,8 @@ export default function Work() {
         </p>
       </div>
 
-      {/* Carousel Container */}
-      <div className="w-full max-w-3xl relative">
+      {/* Left-aligned Carousel Container */}
+      <div className="w-full relative">
         
         {/* Main Card */}
         <div className={`relative w-full aspect-[4/3] sm:aspect-[21/10] rounded-[2rem] transition-colors duration-500 ${current.bg} overflow-hidden shadow-2xl`}>

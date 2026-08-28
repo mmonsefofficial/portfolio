@@ -11,14 +11,7 @@ export default function Navbar() {
         >
           Work
         </a>
-        
-        <a 
-          href="#about" 
-          className="text-xs font-bold tracking-[0.2em] text-[var(--foreground)] hover:text-[var(--accent)] transition-colors duration-200 uppercase"
-        >
-          About
-        </a>
-        
+         
         <a 
           href="#now" 
           className="text-xs font-bold tracking-[0.2em] text-[var(--foreground)] hover:text-[var(--accent)] transition-colors duration-200 uppercase"
@@ -26,6 +19,13 @@ export default function Navbar() {
           Now
         </a>
 
+        <a 
+          href="#about" 
+          className="text-xs font-bold tracking-[0.2em] text-[var(--foreground)] hover:text-[var(--accent)] transition-colors duration-200 uppercase"
+        >
+          About
+        </a>
+       
       </nav>
     </div>
   );

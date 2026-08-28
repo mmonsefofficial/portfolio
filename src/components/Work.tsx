@@ -35,7 +35,17 @@ export default function Work() {
   return (
     <section id="work" className="py-24 flex flex-col items-center justify-center px-4">
       
-      {/* Container with the black background removed */}
+      {/* Section Title Header */}
+      <div className="w-full max-w-3xl mb-10 text-left">
+        <h2 className="text-3xl md:text-4xl font-bold tracking-tight text-[var(--foreground)]">
+          Selected Work
+        </h2>
+        <p className="text-[var(--muted)] mt-2 text-sm md:text-base">
+          A showcase of platforms and projects I've built.
+        </p>
+      </div>
+
+      {/* Carousel Container */}
       <div className="w-full max-w-3xl relative">
         
         {/* Main Card */}

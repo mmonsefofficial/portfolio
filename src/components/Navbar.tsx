@@ -1,32 +1,33 @@
-import { Link } from 'react-router-dom';
-
 export default function Navbar() {
   return (
-    <nav className="w-full bg-[var(--background)] py-6 z-50">
-      <div className="max-w-4xl mx-auto px-6 flex items-center justify-between">
+    /* fixed positioning ensures it floats over all content, pointer-events-none lets you click "through" the invisible container */
+    <div className="fixed top-6 left-0 w-full z-50 flex justify-center px-4 pointer-events-none">
+      
+      {/* The glassy pill container - pointer-events-auto makes the buttons clickable again */}
+      <nav className="flex items-center gap-8 px-8 py-4 bg-[#0a0a0a]/80 backdrop-blur-md border border-[#333] rounded-full shadow-2xl pointer-events-auto">
         
-        {/* Logo / Initials - Bold and sharp */}
-        <Link 
-          to="/" 
-          className="font-semibold text-[var(--foreground)] tracking-tight text-xl"
+        <a 
+          href="#work" 
+          className="text-xs font-bold tracking-[0.2em] text-gray-300 hover:text-[var(--accent)] transition-colors duration-200 uppercase"
         >
-          MM
-        </Link>
+          Work
+        </a>
+        
+        <a 
+          href="#about" 
+          className="text-xs font-bold tracking-[0.2em] text-gray-300 hover:text-[var(--accent)] transition-colors duration-200 uppercase"
+        >
+          About
+        </a>
+        
+        <a 
+          href="#now" 
+          className="text-xs font-bold tracking-[0.2em] text-gray-300 hover:text-[var(--accent)] transition-colors duration-200 uppercase"
+        >
+          Now
+        </a>
 
-        {/* Desktop & Mobile Links */}
-        <div className="flex gap-6 text-sm text-[var(--muted)] font-medium">
-          <a href="#work" className="hover:text-[var(--accent)] transition-colors duration-200">
-            Work
-          </a>
-          <a href="#about" className="hover:text-[var(--accent)] transition-colors duration-200">
-            About
-          </a>
-          <a href="#now" className="hover:text-[var(--accent)] transition-colors duration-200">
-            Now
-          </a>
-        </div>
-
-      </div>
-    </nav>
+      </nav>
+    </div>
   );
 }

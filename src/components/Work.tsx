@@ -5,7 +5,7 @@ const projects = [
     id: 1,
     title: "Atlas",
     link: "https://atlas-navy-mu.vercel.app",
-    logo: "🗺️", // Replace with your actual <img> tag or SVG
+    logo: "🗺️", 
     bg: "bg-gradient-to-br from-blue-500 to-indigo-600",
   },
   {
@@ -13,13 +13,13 @@ const projects = [
     title: "STEM Guide",
     link: "https://stemguide.org",
     logo: "🧬", 
-    bg: "bg-gradient-to-br from-orange-400 to-amber-500", // Matches the orange vibe from your image
+    bg: "bg-gradient-to-br from-orange-400 to-amber-500", 
   },
   {
     id: 3,
     title: "ROTOR X",
     link: "https://mmonsefofficial.github.io/rotorx/",
-    logo: "🤖", 
+    logo: "⚙️", 
     bg: "bg-gradient-to-br from-purple-500 to-fuchsia-600",
   }
 ];
@@ -35,11 +35,11 @@ export default function Work() {
   return (
     <section id="work" className="py-24 flex flex-col items-center justify-center px-4">
       
-      {/* Outer dark container matching the reference UI */}
-      <div className="w-full max-w-3xl bg-[#1c1c1e] p-6 sm:p-8 rounded-[2.5rem] relative shadow-2xl">
+      {/* Container with the black background removed */}
+      <div className="w-full max-w-3xl relative">
         
         {/* Main Card */}
-        <div className={`relative w-full aspect-[4/3] sm:aspect-[21/10] rounded-[2rem] transition-colors duration-500 ${current.bg} overflow-hidden shadow-inner`}>
+        <div className={`relative w-full aspect-[4/3] sm:aspect-[21/10] rounded-[2rem] transition-colors duration-500 ${current.bg} overflow-hidden shadow-2xl`}>
           
           {/* Clickable Center Logo */}
           <a 
@@ -87,8 +87,8 @@ export default function Work() {
               onClick={() => setCurrentIndex(idx)}
               className={`rounded-full transition-all duration-300 ${
                 idx === currentIndex 
-                  ? 'w-8 h-2.5 bg-gray-200' 
-                  : 'w-2.5 h-2.5 bg-gray-600 hover:bg-gray-400'
+                  ? 'w-8 h-2.5 bg-gray-800' 
+                  : 'w-2.5 h-2.5 bg-gray-300 hover:bg-gray-400'
               }`}
               aria-label={`Go to slide ${idx + 1}`}
             />

@@ -17,8 +17,8 @@ const projects = [
   },
   {
     id: 3,
-    title: "AILAR.app",
-    link: "#",
+    title: "ROTOR X",
+    link: "https://mmonsefofficial.github.io/rotorx/",
     logo: "🤖", 
     bg: "bg-gradient-to-br from-purple-500 to-fuchsia-600",
   }

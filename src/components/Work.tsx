@@ -33,22 +33,23 @@ export default function Work() {
   const current = projects[currentIndex];
 
   return (
-    <section id="work" className="py-24 w-full">
-      {/* Wrapper controls the max width so the title and carousel align perfectly on the left edge */}
-      <div className="max-w-4xl mx-auto px-6">
+    <section id="work" className="py-24 w-full flex justify-center px-4 sm:px-6">
+      
+      {/* Strict wrapper ensuring exact left-alignment for both children */}
+      <div className="w-full max-w-3xl flex flex-col items-start">
         
-        {/* Left-aligned Section Title */}
-        <div className="mb-10 text-left">
-          <h2 className="text-3xl md:text-4xl font-bold tracking-tight text-[var(--foreground)]">
+        {/* Title Block */}
+        <div className="w-full text-left mb-8 m-0 p-0">
+          <h2 className="text-3xl md:text-4xl font-bold tracking-tight text-[var(--foreground)] m-0">
             Selected Work
           </h2>
-          <p className="text-[var(--muted)] mt-2 text-sm md:text-base">
+          <p className="text-[var(--muted)] mt-2 text-sm md:text-base m-0">
             A showcase of platforms and projects I've built.
           </p>
         </div>
 
-        {/* Carousel Container */}
-        <div className="w-full relative">
+        {/* Carousel Block */}
+        <div className="w-full relative m-0 p-0">
           
           {/* Main Card */}
           <div className={`relative w-full aspect-[4/3] sm:aspect-[21/10] rounded-[2rem] transition-colors duration-500 ${current.bg} overflow-hidden shadow-2xl`}>

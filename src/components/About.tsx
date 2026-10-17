@@ -20,7 +20,7 @@ export default function About() {
             <span className="font-mono text-xs text-[var(--accent)]">EDUCATION</span>
             <h3 className="text-lg font-semibold text-[var(--foreground)] mt-1">Red Sea STEM High School</h3>
             <p className="text-sm text-[var(--muted)] mt-1">High School Diploma | Expected Graduation: July 2028</p>
-            <p className="text-sm font-mono text-[var(--foreground)] mt-2">GPA: 3.85 / 4.00</p>
+            <p className="text-sm font-mono text-[var(--foreground)] mt-2">GPA: 3.7 / 4.00</p>
           </div>
         </div>
 

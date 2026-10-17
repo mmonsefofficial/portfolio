@@ -42,7 +42,7 @@ export default function Hero() {
         <p className="text-[var(--muted)] mb-4 text-sm font-medium">Hi, I'm</p>
         
         <h1 className="text-6xl md:text-7xl lg:text-[80px] font-bold tracking-tight text-[var(--foreground)] leading-[1.05]">
-          Mohamed <br /> Monsef
+          Mohamed <br /> AbdelMonsef
         </h1>
         
         <div className="h-[3px] w-12 bg-[var(--accent)] mt-8 mb-8"></div>

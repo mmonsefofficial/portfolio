@@ -8,7 +8,7 @@ export function About() {
     <section className="mx-auto max-w-[1200px] px-4 pb-24 pt-20 sm:px-6 md:pt-24">
       <div className="max-w-[700px]">
         <p className="font-mono text-[12px] tracking-[0.08em] text-muted">About</p>
-        <h1 className="mt-3 font-display text-[32px] sm:text-[48px]">Mohamed Monsef</h1>
+        <h1 className="mt-3 font-display text-[32px] sm:text-[48px]">Mohamed AbdelMonsef</h1>
         <p className="mt-6 text-[16px] leading-7 text-muted">
           I am a student, developer, designer, and competitive programmer interested
           in software, AI, and building useful products.
